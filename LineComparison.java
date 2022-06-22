@@ -1,5 +1,7 @@
 package line_comparison_problem;
 
+import java.util.Scanner;
+
 public class LineComparison {
 	static void distance(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
 	{
@@ -23,7 +25,23 @@ public class LineComparison {
 	}
 
 	public static void main(String[] args) {
-		distance(2, 3, 2, 3, 2, 3, 2, 3);
+		int x1, y1, x2, y2, x3, y3, x4, y4;
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of x1 and y1:");
+        x1 = sc.nextInt();
+        y1 = sc.nextInt();
+        System.out.print("Enter the value of x2 and y2:");
+        x2 = sc.nextInt();
+        y2 = sc.nextInt();
+      
+        System.out.print("Enter the value of x3 and y3:");
+        x3 = sc.nextInt();
+        y3 = sc.nextInt();
+        System.out.print("Enter the value of x4 and y4:");
+        x4 = sc.nextInt();
+        y4 = sc.nextInt();
+        distance(x1, y1, x2, y2, x3, y3, x4, y4);
 
 	}
 }
